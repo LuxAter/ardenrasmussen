@@ -1,0 +1,91 @@
+// assets/sass/vendors/_admonitions-user-settings.scss
+//
+// Welcome to the user settings file for Hugo Admonitions!
+// To customize, copy this file to your Hugo project at `assets/sass/vendors/`.
+// Then, uncomment and modify the variables below to fit your site's design.
+//
+// IMPORTANT: Do NOT use `!default` in this file.
+
+// =============================================================================
+// --- Option 1: Override Base Colors for Specific Admonition Types ---
+// =============================================================================
+// Use this map to change the default left-border and accent color for any admonition type.
+//
+// $admonition-colors-overrides: (
+//   note: #007bff,      // Make 'note' admonitions blue (like Bootstrap's primary color)
+//   tip: #28a745,       // Make 'tip' admonitions green (like Bootstrap's success color)
+//   warning: #ffc107    // Make 'warning' admonitions yellow (like Bootstrap's warning color)
+// );
+
+// =============================================================================
+// --- Option 2: Override Header Text & Icon Colors ---
+// =============================================================================
+// Use these maps for fine-grained control over the header text and icon color.
+// This is useful when a type's base color is too light or dark, causing poor contrast.
+
+// Light Mode Header Text Overrides
+$admonition-light-header-text-overrides: (
+  abstract:   oklch(60.9% 0.126 221.723),
+  caution:    oklch(66.6% 0.179 58.318),
+  code:       oklch(55.8% 0.288 302.321),
+  conclusion: oklch(59.2% 0.249 0.584),
+  danger:     oklch(66.6% 0.179 58.318),
+  error:      oklch(57.7% 0.245 27.325),
+  example:    oklch(59.2% 0.249 0.584),
+  experiment: oklch(64.8% 0.2   131.684),
+  goal:       oklch(57.7% 0.245 27.325),
+  idea:       oklch(64.6% 0.222 41.116),
+  important:  oklch(55.8% 0.288 302.321),
+  info:       oklch(58.8% 0.158 241.966),
+  memo:       oklch(57.7% 0.245 27.325),
+  note:       oklch(54.6% 0.245 262.881),
+  notify:     oklch(51.1% 0.262 276.966),
+  question:   oklch(60.9% 0.126 221.723),
+  quote:      oklch(59.1% 0.293 322.896),
+  success:    oklch(62.7% 0.194 149.214),
+  task:       oklch(55.8% 0.288 302.321),
+  tip:        oklch(60.9% 0.126 221.723),
+  warning:    oklch(68.1% 0.162 75.834),
+);
+
+// Dark Mode Header Text Overrides
+$admonition-dark-header-text-overrides: (
+  abstract:  oklch(78.9% 0.154 211.53), 
+  caution:   oklch(82.8% 0.189 84.429), 
+  code:      oklch(71.4% 0.203 305.504), 
+  conclusion:oklch(71.8% 0.202 349.761), 
+  danger:    oklch(82.8% 0.189 84.429), 
+  error:     oklch(70.4% 0.191 22.216), 
+  example:   oklch(71.8% 0.202 349.761), 
+  experiment:oklch(84.1% 0.238 128.85), 
+  goal:      oklch(70.4% 0.191 22.216), 
+  idea:      oklch(75% 0.183 55.934), 
+  important: oklch(71.4% 0.203 305.504), 
+  info:      oklch(74.6% 0.16 232.661), 
+  memo:      oklch(70.4% 0.191 22.216), 
+  note:      oklch(70.7% 0.165 254.624), 
+  notify:    oklch(67.3% 0.182 276.935), 
+  question:  oklch(78.9% 0.154 211.53), 
+  quote:     oklch(74% 0.238 322.16), 
+  success:   oklch(79.2% 0.209 151.711), 
+  task:      oklch(71.4% 0.203 305.504), 
+  tip:       oklch(78.9% 0.154 211.53), 
+  warning:   oklch(85.2% 0.199 91.936), 
+);
+
+// =============================================================================
+// --- Option 3: Override Global Theme Colors ---
+// =============================================================================
+// Change the fundamental colors for all admonitions in light or dark mode.
+
+// Light Mode Colors
+$admonition-light-bg: var(--entry); // Content background
+$admonition-light-text: var(--primary); // Content text
+$admonition-light-code-bg: var(--code-bg); // Inline code & code block background
+$admonition-light-code-text: var(--primary); // Inline code & code block text
+
+// Dark Mode Colors
+$admonition-dark-bg: var(--entry); // Content background
+$admonition-dark-text: var(--primary); // Content text
+$admonition-dark-code-bg: var(--code-bg); // Inline code & code block background
+$admonition-dark-code-text: var(--primary); // Inline code & code block text
