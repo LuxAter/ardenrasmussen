@@ -3,6 +3,9 @@ date: 2020-03-06
 title: "TRM v1"
 cover:
     image: 20200305232406.png
+editPost:
+    URL: https://github.com/LuxAter/trm
+    Text: https://github.com/LuxAter/trm
 ---
 
 TRM (Tiny Ray Marcher) is a C++ project that implement a very small ray

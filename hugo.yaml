@@ -21,6 +21,21 @@ pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+            - - '\['
+              - '\]'
+            - - $$
+              - $$
+          inline:
+            - - '\('
+              - '\)'
+            - - "$"
+              - "$"
+        enable: true
 
 pagination:
   pagerSize: 10
@@ -35,6 +50,7 @@ menu:
       weight: 10
 
 params:
+  math: true
   env: production
   description: "Arden Rasmussen's Personal Portfolio"
   defaultTheme: auto
