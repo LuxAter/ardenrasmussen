@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Arden Rasmussen</title>
+    <link>https://ardenrasmussen.com/projects/</link>
+    <description>Recent content in Projects on Arden Rasmussen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ardenrasmussen.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Novi</title>
+      <link>https://ardenrasmussen.com/projects/00pw/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/00pw/</guid>
+      <description>&lt;p&gt;Novi is a structured data inspector and validation system. A core library built
+in Rust provides a unified interface for parsing many different data types into
+a unified structured format. Included with the core library is a validation
+system, allowing for user provided Lua scripts (or builtin ones) which are given
+the structured data and can perform arbitrary validations and tests on the data,
+producing a validation report highlighting any issues with the data. Several
+client applications are also included such as a CLI, Web, and Desktop interface,
+which all provide interactive interfaces for exploring the parsed structured
+data, and the validation reports.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bookshelf</title>
+      <link>https://ardenrasmussen.com/projects/71rq/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/71rq/</guid>
+      <description>&lt;p&gt;Bookshelf is a focused self hosted e-book manager. It is primarily focused on the
+server side and providing a well organized e-book database, and exposing those
+through an Open Publication Distribution System (OPDS) API for third party
+clients to consume (such as e-readers like Kindle, or mobile or desktop
+applications).&lt;/p&gt;
+&lt;p&gt;The server is written in Go with a strictly defined OpenAPI schema making it
+easy for third party clients to integrate with the server backend. Bookshelf
+handles detecting new or modified files through file system watching, and
+automatically reads the metadata from the EPUB, MOBI, or PDF file (or if present
+a sidecar metadata file). Using that metadata it builds a database of all the
+books and series.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nand to Tetris</title>
+      <link>https://ardenrasmussen.com/projects/zhfq/</link>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/zhfq/</guid>
+      <description>&lt;p&gt;Nand to Tetris is a course from the book &lt;em&gt;The Elements of Computing Systems:
+Building a Modern Computer from First Principles&lt;/em&gt; by Noam Nisan and Shimon
+Schocken. The course covers the design and implementation of a simplified
+computer model, starting from first principals of a single NAND gate, and using
+that to build up more complex logic gates. Gradually expanding on the previous
+chapters to introduce more complex structures ultimately cumulating in the
+construction of a basic computer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GD Snake</title>
+      <link>https://ardenrasmussen.com/projects/75o4/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/75o4/</guid>
+      <description>&lt;p&gt;GD Snake is a fully featured implementation of the classic Snake game, built
+using the &lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot&lt;/a&gt; game engine. The aim of the project
+was primarily a learning experience for game development and how to use the
+Godot game engine. So it implements all features of a full sized game, just
+applied to the smaller scope of Snake.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Main Menu&#34; loading=&#34;lazy&#34; src=&#34;https://ardenrasmussen.com/projects/75o4/20260508_113950.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The main menu, includes a real-time game of snake running in the background
+using AI snakes, to provide visual interest while the user is in the menus.
+Along with a standard settings allowing for the adjusting audio levels (which is
+persisted) and dynamic rebinding controls. The game includes a pallet swap
+shader allowing for multiple themes and styles to be easily applied to the full
+game, and includes a selection a builtin color pallets the user can pick from.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cerebri</title>
+      <link>https://ardenrasmussen.com/projects/nn07/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/nn07/</guid>
+      <description>&lt;p&gt;Cerebri is a framework and setup for training, hosting, and exploring Large
+Language Models (LLMs). It was created by following the &lt;a href=&#34;https://karpathy.ai/zero-to-hero.html&#34;&gt;Neural Networks: Zero
+to Hero&lt;/a&gt; course by Andrej Karpathy.
+Building up a backpropagation algorithm in python, and then expanding that to
+build up to a deep neural networks and a GPT model.&lt;/p&gt;
+&lt;p&gt;The goal of Cerebri is primarily for learning about the inner workings of a
+large language model, and all the components of that, so a large focus was on
+the development and the different phases that were a part of that. Then it also
+extends that by training some custom tokenizers and a &lt;em&gt;very&lt;/em&gt; basic GPT using the
+&lt;a href=&#34;https://huggingface.co/datasets/HuggingFaceFW/fineweb-2&#34;&gt;FineWeb2&lt;/a&gt; dataset and
+local hardware.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Astri</title>
+      <link>https://ardenrasmussen.com/projects/u1pa/</link>
+      <pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/u1pa/</guid>
+      <description>&lt;p&gt;Astri is a satellite tracking and visualizer. It automatically pulls the list of
+all publicly tracked satellites from &lt;a href=&#34;https://celestrak.org/&#34;&gt;CelesTrak&lt;/a&gt; (as of
+writing $\sim 15,000$ satellites). Then using the Simplified General
+Perturbations-4 (SGP4) model developed by the United States Department of
+Defense (DoD) for predicting satellite position and velocity for any given point
+in time.&lt;/p&gt;
+&lt;p&gt;Astri also includes an interactive user interface, which renders simplified
+models for each of the satellites and visualizes their position relative to the
+earth and the other satellites. The user interface includes an explorer list for
+sorting and filtering the satellites and controlling which ones are displayed.
+And it automatically groups satellites into their constellations both in the
+explorer list and using the same colors to represent satellites from the same
+constellation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TRM v2</title>
+      <link>https://ardenrasmussen.com/projects/ymoy/</link>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/ymoy/</guid>
+      <description>&lt;p&gt;Tiny Ray March v2 is a reworking of the previous version of &lt;a href=&#34;../ztb4&#34;&gt;TRM v1&lt;/a&gt;,
+with an emphasis on data collection to analytically quantify the quality and
+performance improvements of different features. It is designed as a simple and
+lightweight ray marcher for educational purposes and as a test platform for
+understanding ray marching and the performance improvements that come from
+various features.&lt;/p&gt;
+&lt;p&gt;TRM is written as a C++ library, and the scene definition is a C++ structure
+which can be either statically defined in a runtime, or dynamically created by a
+runtime. It implements a minimal set of features initially, and only supports a
+small set of material types (Emissive, Diffuse, Specular, Refractive, and
+Fresnel). And as more features are implemented, the performance and quality
+improvements of each feature are tested with the included example scenes, and
+the results are recorded in a spreadsheet for analysis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Blender Render</title>
+      <link>https://ardenrasmussen.com/projects/rfs6/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/rfs6/</guid>
+      <description>&lt;p&gt;I tasked myself to make a new render using blender once a week. I decided to to
+this to help improve my skills with blender, and to produce some interesting
+images that.&lt;/p&gt;
+&lt;p&gt;The eventual goal of this project is to learn how to use Blender more fluently,
+so that I am able to integrate the &lt;a href=&#34;../5djw&#34;&gt;Specula&lt;/a&gt; with Blender
+more effectively. Since Specula is not intended to be a modeling software, I
+intend to use blender to do the modeling, and then load the scenes into the
+Specula renderer. So the first step of that process is to learn how to use
+Blender effectively.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TRM v1</title>
+      <link>https://ardenrasmussen.com/projects/ztb4/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/ztb4/</guid>
+      <description>&lt;p&gt;TRM (Tiny Ray Marcher) is a C++ project that implement a very small ray
+marching algorithm. The project implements the fundamental components of a path
+tracer, and even provides an easy to use scene definition file.&lt;/p&gt;
+&lt;h4 id=&#34;efficiency&#34;&gt;Efficiency&lt;/h4&gt;
+&lt;p&gt;By changing specific key configuration values in a rendered image, it is
+possible to significantly alter the quality of the image, in direct relation to
+the runtime of the program. However some settings will produce a better output
+image, for less cost to runtime. The main two settings that we consider here,
+is the &lt;strong&gt;spp&lt;/strong&gt; and the &lt;strong&gt;resolution&lt;/strong&gt;. By doubling the spp it can be considered
+that we are rendering twice as many images, and combining the images after the
+fact. While doubling the resolution is equivalent to rendering four times the
+number of images, and connecting the images as the four quadrants of the output
+image.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Specula V1</title>
+      <link>https://ardenrasmussen.com/projects/5djw/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/5djw/</guid>
+      <description>&lt;p&gt;This ray tracer implements the basis of a ray tracing rendering engine in C++.
+It is possible to render still images, or sequences of images. Multi threading
+has also been implemented allowing for significantly faster render times.&lt;/p&gt;
+
+            &lt;link rel=&#34;stylesheet&#34; href=&#34;https://ardenrasmussen.com/css/vendors/admonitions.2396c2e673dc85178788d034193059c6cc19b3481a40d07e3ef8564f52f0eeef.css&#34; integrity=&#34;sha256-I5bC5nPchReHiNA0GTBZxswZs0gaQNB&amp;#43;PvhWT1Lw7u8=&#34; crossorigin=&#34;anonymous&#34;&gt;
+    &lt;div class=&#34;admonition warning&#34;&gt;
+      &lt;div class=&#34;admonition-header&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z&#34;/&gt;&lt;/svg&gt;
+        &lt;span&gt;Warning&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;admonition-content&#34;&gt;
+        &lt;p&gt;A complete overhaul of the Specula rendering engine is currently in progress.
+This rewrite is focused on implementing path tracing into the renderer, and
+implementing PBR techniques.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
