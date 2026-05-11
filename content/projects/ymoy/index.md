@@ -68,7 +68,7 @@ the rate at which the image is converging to the ground truth.
 ## Sample Scenes
 
 ![Empty Room](./20260505093909.png)
-A basic empty room, with an emmisive ceiling, a diffuse floor and walls. There
+A basic empty room, with an emissive ceiling, a diffuse floor and walls. There
 are no objects in the scene, and no reflections or refractions. This is the most
 basic scene, and serves as a baseline for testing the best case performance.
 

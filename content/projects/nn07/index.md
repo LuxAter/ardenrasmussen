@@ -26,7 +26,7 @@ implementing a bigram character-level language model. Then we build up a
 multilayer perception (MLP) character-level language model.
 
 Afterwards, taking the MLP model developed and expanding that into a convolutional
-neural network. And then finally constructing a Generativly Pretrained
+neural network. And then finally constructing a Generatively Pretrained
 Transformer (GPT) based on OpenAI's GPT-2 / GPT-3 model. Along with our own
 custom Byte Pair Encoding tokenizer used for the GPT model training and
 evaluation.
@@ -50,10 +50,10 @@ provides a proof of concept to show that it is feasible to do entirely locally.
 
 ## Inference
 
-{{< video src="./20260505112214.mkv" >}}
+{{< video src="./20260505112214.webm" >}}
 
 The second part of Cerebri is to provide a web interface to interact with the
-tokenizer and the GPT models. The backend is implemented in rust leverging the
+tokenizer and the GPT models. The backend is implemented in rust leveraging the
 PyTorch C++ library for the model inference. The backend provides an API
 interface and an OpenAPI schema for interacting with the tokenizers and the
 models.

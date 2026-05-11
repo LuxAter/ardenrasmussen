@@ -15,29 +15,29 @@ in time.
 Astri also includes an interactive user interface, which renders simplified
 models for each of the satellites and visualizes their position relative to the
 earth and the other satellites. The user interface includes an explorer list for
-sorting and filtering the satellites and controling which ones are displayed.
-And it automatically groups satellites into their constalations both in the
+sorting and filtering the satellites and controlling which ones are displayed.
+And it automatically groups satellites into their constellations both in the
 explorer list and using the same colors to represent satellites from the same
-constelation.
+constellation.
 
 ## Satellite Prediction Model
 
-Some of the SGP4 publications provides an implementation of the algorithim in C.
+Some of the SGP4 publications provides an implementation of the algorithm in C.
 However the included source code is is not cross platform (it depends on Windows
 specific headers) and doesn't follow modern development standards. I have
-re-implemented the SGP4 algorithm in C++ whiel leverging more modern practicies.
+re-implemented the SGP4 algorithm in C++ while leveraging more modern practises.
 Modifying functions that took $>80$ individual variables to grouping those
 variables into data structures or arrays where applicable. Renaming the
 mathematically oriented variable names into more descriptive identifiers (e.g.
 `argpp` to `arg_of_periapsis`) to make the code more readable.
 
-This reimplementation of the SGP4 algorithim is available as a standalone
+This reimplementation of the SGP4 algorithm is available as a standalone
 library so that it can be reused in any context. And has minimal dependencies
 beyond the standard library and a logging library.
 
 ## Astri Application
 
-{{< video src="./2026-05-08 10-45-25.mp4" >}}
+{{< video src="./20260508104525.webm" >}}
 
 The Astri application is also written in C++ using
 [OpenGL](https://www.opengl.org/) for rendering the earth and satellites.
@@ -46,7 +46,7 @@ user interface. To improve performance the satellites are handled using an
 Entity Component System (ECS) [flecs](https://www.flecs.dev/flecs/), and is
 easily able to handle the ~50k satellites without dropping frames. 
 
-The application includes a basic camiera for orbiting around the earth and
+The application includes a basic camera for orbiting around the earth and
 zooming in and out. With keybindings the user can speed up or slow down the
 simulation, and increase or shrink the size of the satellite models to make them
 easier to see.

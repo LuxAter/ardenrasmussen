@@ -16,30 +16,30 @@ applied to the smaller scope of Snake.
 The main menu, includes a real-time game of snake running in the background
 using AI snakes, to provide visual interest while the user is in the menus.
 Along with a standard settings allowing for the adjusting audio levels (which is
-persisted) and dynamic rebinding controls. The game includes a pallete swap
+persisted) and dynamic rebinding controls. The game includes a pallet swap
 shader allowing for multiple themes and styles to be easily applied to the full
 game, and includes a selection a builtin color pallets the user can pick from.
 
 ![New Game](./20260508_113942.png)
 
-The game it's self supports arbitrary number of AI oponents and up to four
-players. The initial spawn points for the snakes is gaurenteed to be spaced out
+The game it's self supports arbitrary number of AI opponents and up to four
+players. The initial spawn points for the snakes is guaranteed to be spaced out
 in the selected map so that there isn't immediate contention when the game
 starts. The map size can also be arbitrary large or small, when the map is too
 large to fit on a single screen then a camera follows the snake, the zoom of
-which can be controled in the settings. When multiple players are in the game,
+which can be controlled in the settings. When multiple players are in the game,
 then it supports split screen so each player has their own camera. The map can
-also include optional obsticals, which place walls throught the map which breaks
+also include optional obstacles, which place walls throughout the map which breaks
 up the open space and requires more strategy to work around and plan ahead to
 avoid.
 
-{{< video src="./2026-05-08 11-42-28.mp4" >}}
+{{< video src="./20260508114228.webm" >}}
 
 Finally the game also includes both background music tracks, and sound effects
-to provide more user feedback when actions occure.
+to provide more user feedback when actions occurs.
 
 Although simple, this implementation of snake covers user input (and
-accessability through rebinding controls), graphics, AI, menus, persistent/save
+accessibility through rebinding controls), graphics, AI, menus, persistent/save
 data, and music and sound effects. And through the development of this game I
 have gained a better understanding of these different pieces and how to fit them
 together into a larger project.
