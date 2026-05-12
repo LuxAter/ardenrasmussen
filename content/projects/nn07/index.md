@@ -23,7 +23,7 @@ local hardware.
 The development of Cerebri closely follows Zero to Hero course, starting with a
 custom implementation of backpropagation in python, then extending to
 implementing a bigram character-level language model. Then we build up a
-multilayer perception (MLP) character-level language model.
+multilayer perceptron (MLP) character-level language model.
 
 Afterwards, taking the MLP model developed and expanding that into a convolutional
 neural network. And then finally constructing a Generatively Pretrained
@@ -41,16 +41,18 @@ the python scripts for training both the tokenizers and the models.
 
 Due to limited resources, the training data is dynamically streamed and
 interleaved different data sets to reduce the necessary disk space. And the GPT
-training includes the common optimizations for levering hardware acceleration
+training includes the common optimizations for leveraging hardware acceleration
 with CUDA if available.
 
 All tokenizer and model training was done locally using an Nvidia GTX 1060 GPU
-for the model training. As such the model is significantly under trained but
-provides a proof of concept to show that it is feasible to do entirely locally.
+for the model training. As such the model is focused on verification of the
+achitecture and implementation and not for real world use cases, as the
+hardware is not powerful enough to train a large model in a reasonable amount
+of time.
 
 ## Inference
 
-{{< video src="./20260505112214.webm" >}}
+{{< video src="https://media.githubusercontent.com/media/LuxAter/ardenrasmussen/refs/heads/main/content/projects/nn07/20260505112214.webm" >}}
 
 The second part of Cerebri is to provide a web interface to interact with the
 tokenizer and the GPT models. The backend is implemented in rust leveraging the

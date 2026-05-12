@@ -40,6 +40,9 @@ markup:
 pagination:
   pagerSize: 10
 
+ignoreFiles:
+  - ".webm$"
+
 menu:
   main:
     - name: Projects

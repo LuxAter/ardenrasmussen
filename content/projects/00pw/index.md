@@ -15,12 +15,13 @@ data, and the validation reports.
 
 ## Core Parsing
 
-The core parsing library is the core of Novi, and being a library it can be
-easily integrated into other applications or paired with other clients. Input
-data is first transformed, using a chain of transformers, which allows for
-handling compressed / encoded content seamlessly. The library provides a
-handler structure for decoding data (the `Decoder`), which provides a robust
-and flexible interface allowing for the decoding of complex data types, and the
+The core parsing library is the core of Novi handling the parsing of various
+formats, supporting ELF, PNG, JPEG, MP4, etc. Being a library it can be easily
+integrated into other applications or paired with other clients. Input data is
+first transformed, using a chain of transformers, which allows for handling
+compressed / encoded content seamlessly. The library provides a handler
+structure for decoding data (the `Decoder`), which provides a robust and
+flexible interface allowing for the decoding of complex data types, and the
 decoder encapsulates all of the complex logic for converting data types and
 storing data into the structured tree. The transformed data is passed to the
 data format specific parser, which leverages the decoder to read the raw data
@@ -39,7 +40,7 @@ for parsing malformed or corrupted data.
 An addition to the core parsing is the validation. Using an embedded Lua runtime,
 the Novi library can support validating the parsed structured tree. Each
 supported data format includes builtin validation, but users are also able to
-define or override with their own validations, by simple writing some simple
+define or override with their own validations, by simply writing some simple
 Lua scripts. The validation generates a report with different messages which
 reference locations in the structured tree, making it easy through the clients
 to annotate the corresponding tree nodes with the validation warnings or errors.
@@ -49,7 +50,7 @@ to annotate the corresponding tree nodes with the validation warnings or errors.
 The client applications are all designed to be agnostic to the data format being
 parsed. The core library and validation handles all of the particularities of
 each given format, and by the time the client interacts with the data it is a
-generic structured tree and validation report. This make sit very easy to add
+generic structured tree and validation report. This makes it very easy to add
 support for new formats, since nothing needs to change in any of the clients to
 support it.
 

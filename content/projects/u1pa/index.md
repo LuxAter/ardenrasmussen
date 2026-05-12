@@ -23,9 +23,9 @@ constellation.
 ## Satellite Prediction Model
 
 Some of the SGP4 publications provides an implementation of the algorithm in C.
-However the included source code is is not cross platform (it depends on Windows
+However the included source code is not cross platform (it depends on Windows
 specific headers) and doesn't follow modern development standards. I have
-re-implemented the SGP4 algorithm in C++ while leveraging more modern practises.
+re-implemented the SGP4 algorithm in C++ while leveraging more modern practices.
 Modifying functions that took $>80$ individual variables to grouping those
 variables into data structures or arrays where applicable. Renaming the
 mathematically oriented variable names into more descriptive identifiers (e.g.
@@ -33,11 +33,13 @@ mathematically oriented variable names into more descriptive identifiers (e.g.
 
 This reimplementation of the SGP4 algorithm is available as a standalone
 library so that it can be reused in any context. And has minimal dependencies
-beyond the standard library and a logging library.
+beyond the standard library and a logging library. It implements the required
+logic for parsing the TLE (Two-Line Element) sets, and initializing and
+calculating the satellite position and velocity for any given point in time.
 
 ## Astri Application
 
-{{< video src="./20260508104525.webm" >}}
+{{< video src="https://media.githubusercontent.com/media/LuxAter/ardenrasmussen/refs/heads/main/content/projects/u1pa/20260508104525.webm" >}}
 
 The Astri application is also written in C++ using
 [OpenGL](https://www.opengl.org/) for rendering the earth and satellites.

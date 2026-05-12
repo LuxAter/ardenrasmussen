@@ -5,8 +5,8 @@ cover:
     image: 20260511_091506.png
 ---
 
-Bookshelf is a focused self hosted e-book manager. It is primarily focused on the
-server side and providing a well organized e-book database, and exposing those
+Bookshelf is a focused self hosted e-book manager. It is primarily focused on
+the server side, providing a well organized e-book database, and exposing those
 through an Open Publication Distribution System (OPDS) API for third party
 clients to consume (such as e-readers like Kindle, or mobile or desktop
 applications).
@@ -48,10 +48,11 @@ includes a progress indicator making it easy to see which books have been
 finished or where you are in the book. 
 
 It also includes a page for browsing all books or all books in a specific
-library. These pages use paginated queries and a virtualised renderer to improve
-performance for large libraries by only rendering the books within the viewport,
-while prefetching data so that it is a smooth scrolling experience with minimal
-need for buffering.
+library. These pages use paginated queries and a virtualized renderer using
+[Tanstack Virtual](https://tanstack.com/virtual/latest) to improve performance
+for large libraries by only rendering the books within the viewport, while
+prefetching data so that it is a smooth scrolling experience with minimal need
+for buffering.
 
 ![Series List](./20260511093041.png)
 

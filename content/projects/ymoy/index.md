@@ -51,16 +51,17 @@ This measurement of convergence is harder to quantify, we approximate it by
 rendering a final extremely high-quality image using a much higher number of
 samples ($\sim1024$). Then re-rendering the same scene using a different seed
 and saving snapshots at fixed intervals. Then for each snapshot we compute the
-average $\Delta E$ difference between the snapshot and the high-quality "final"
-image. That $\Delta E$ value is the measure of perceptual difference between the
-two images, allowing for small differences that are not noticeable by humans. And
-my comparing the rate of decrease for the $\Delta E$ we get an approximation for
-the rate at which the image is converging to the ground truth.
+average $\Delta E$ (CIE76) difference between the snapshot and the high-quality
+"final" image. That $\Delta E$ value is the measure of perceptual difference
+between the two images, allowing for small differences that are not noticeable
+by humans. And by comparing the rate of decrease for the $\Delta E$ we get an
+approximation for the rate at which the image is converging to the ground
+truth.
 
 > [!NOTE]
 > For a single color a $\Delta E \leq 2$ is considered to be an imperceptible
 > difference. Since this data is the average for each individual pixel this
-> isn't as accurate but it is a continent baseline to understand when viewing
+> isn't as accurate but it is a convinient baseline to understand when viewing
 > the statistics.
 
 ![Delta E vs Samples](./20260505113601.png)
