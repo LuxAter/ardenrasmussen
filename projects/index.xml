@@ -6,12 +6,12 @@
     <description>Recent content in Projects on Arden Rasmussen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://ardenrasmussen.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novi</title>
       <link>https://ardenrasmussen.com/projects/00pw/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://ardenrasmussen.com/projects/00pw/</guid>
       <description>&lt;p&gt;Novi is a structured data inspector and validation system. A core library built
 in Rust provides a unified interface for parsing many different data types into
@@ -22,6 +22,24 @@ producing a validation report highlighting any issues with the data. Several
 client applications are also included such as a CLI, Web, and Desktop interface,
 which all provide interactive interfaces for exploring the parsed structured
 data, and the validation reports.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wallpaper Manager</title>
+      <link>https://ardenrasmussen.com/projects/z80p/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://ardenrasmussen.com/projects/z80p/</guid>
+      <description>&lt;p&gt;&lt;code&gt;wall.py&lt;/code&gt; is a single python script designed automate the management of a
+wallpaper collection. As a collection of wallpapers grow, properly managing the
+images becomes more and more difficult (my current collection is ~900 images),
+and this utility was designed to automate and make it easier to manage the image
+collection.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wall.py&lt;/code&gt; is built as a CLI application, leverging
+&lt;a href=&#34;https://rich.readthedocs.io/en/stable/introduction.html&#34;&gt;Rich&lt;/a&gt;, &lt;a href=&#34;https://python-prompt-toolkit.readthedocs.io/en/3.0.52/&#34;&gt;Prompt
+Toolkit&lt;/a&gt;, and the
+&lt;a href=&#34;https://sw.kovidgoyal.net/kitty/graphics-protocol/&#34;&gt;Terminal graphics protocol&lt;/a&gt;
+to cleanly display thumbnails of images and prompt the user for final decisions.
+This makes it a fully complete workflow without requiring the user to open up
+any other tools and creating a coheasive experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bookshelf</title>
