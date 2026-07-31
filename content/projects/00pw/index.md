@@ -1,6 +1,11 @@
 ---
-date: 2026-05-01
+date: 2026-07-31
 title: "Novi"
+cover:
+    image: 20260731_101852.png
+editPost:
+    URL: https://github.com/Nedra1998/Novi
+    Text: https://github.com/Nedra1998/Novi
 ---
 
 Novi is a structured data inspector and validation system. A core library built
@@ -70,6 +75,30 @@ to any potential issues. The web interface is the main interface new users are
 expected to use, so it is careful to include clear descriptions and follow
 standard design patterns so that new users can quickly and effectively onboard to
 using the tooling with a minimal learning curve for getting started.
+
+The web interface is built with a dynamic tiling intrace at it's core, allowing
+users to reposition, organize, and resize the hex view or tree view of any
+number of files however they wish
+
+The web interface includes a linked selection, so you can feely selectin any
+field in the hex view, or the structured tree and it will highlight the
+corresponding fields in each panel for that buffer, making it trivially easy to
+associate the exact bytes that realate to a given field.
+
+![Validations run on a PNG](./20260731_102157.png)
+
+It also supports the bundled validations, which will be run on any file type
+that is supported and produce a table of validation messages, which link
+directly to the corresponding fields in three and hex view to highlight where
+the issue was found. Making debugging and diagnosing corrupted or invalid data
+trivally easy.
+
+> [!INFO]
+> Due to the entier library running as a web assembly module in the browser,
+> there are strict limits on the sizes of files that can be processed in order
+> to limit the memory utilization needed to store the files in memory. This
+> limitation is not present for the CLI or the future Desktop versions which
+> have the ability to stream from disk.
 
 ### Command Line Interface
 
